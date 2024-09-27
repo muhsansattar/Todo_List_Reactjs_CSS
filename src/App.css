@@ -1,0 +1,77 @@
+*{
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #000;
+  color: #fff;
+}
+.child-div{
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  height: 100vh;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.child-div figure img{
+  margin:10px 0;
+}
+.child-div figure figcaption{
+  margin: 10px 0 0 10px;
+}
+.addItems{
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.addItems input::placeholder{
+  padding-left: 5px;
+}
+.form-control{
+  width: 100%;
+  padding-right: 30px;
+  height: 40px;
+  outline: none;
+}
+.fa-plus{
+  position: absolute;
+  left:260px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #000;
+}
+.edit-after-click{
+  position: absolute;
+  left:260px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #000;
+}
+.show-items .each-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  width: 300px;
+  height: 40px;
+  background-color: #00ff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.show-items .each-item .todo-btn i{
+  margin: 0 10px;
+
+}
+.show-items button{
+  padding: 10px 30px;
+  border-radius: 5px;
+}
